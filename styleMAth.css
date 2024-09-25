@@ -183,6 +183,27 @@
             line-height: 20px; /* Align with the button */
             background-color: #eafafa
         }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 300px;
+        }
+.boxYoutube {
+    background-color: #e0ffff; /* cyan très clair */
+    border: 2px solid #000000; /* bordure noire */
+    padding: 15px;
+    margin: 10px 0;
+font-weight: bold; /* texte en gras */
+}
 .underline-title {
             padding: 1px 0;
             border-bottom: 2px solid #4285f4;
@@ -191,4 +212,70 @@
             font-size: 16px;
             font-weight: bold;
             margin-bottom: 25px;
+        }
+        ul {
+            margin-left: 20px;
+            list-style-type: square;
+        }
+
+        a {
+            color: #4285f4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+.enumeratechiffre {
+    counter-reset: list-counter;
+    list-style: none;
+    padding-left: 30px; /* Ajoute de l'espace à gauche de la liste */
+}
+
+.enumeratechiffre li {
+    counter-increment: list-counter;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px; /* Espace entre le numéro et le texte */
+}
+
+.enumeratechiffre li::before {
+    content: counter(list-counter) ")";
+    font-weight: bold;
+    margin-right: 5px;
+    color: black;
+    position: absolute;
+    left: 0;
+}
+ .table-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+font-size: 0.8em; /* Réduit la taille du texte */
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        /* Style pour le bouton de retour */
+    .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4285f4; /* Couleur du bouton */
+            color: white; /* Couleur du texte */
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Cacher le bouton par défaut */
+        }
+        /* Afficher le bouton lorsque l'utilisateur défile */
+        .show {
+            display: block;
         }

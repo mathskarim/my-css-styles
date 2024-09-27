@@ -14,7 +14,15 @@
             color: #333; /* Texte noir */
             padding: 5px;
         }
-
+t1 {
+    font-size: 12pt; /* Taille des titres */
+    text-decoration: underline; /* Soulignement des titres */
+    /* text-align: center; */
+    /*background-color: #98FB98;  Fond jaune très clair */
+    color: maroon; /* Texte noir */
+    padding: 5px;
+    font-weight: bold; /* Ajoute du texte en gras */
+}
 
         /* Style pour les théorèmes */
         .theorem-box {

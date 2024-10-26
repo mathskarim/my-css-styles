@@ -287,3 +287,23 @@ font-size: 0.8em; /* Réduit la taille du texte */
         .show {
             display: block;
         }
+.t1 {
+    font-size: 12pt; /* Taille des titres */
+    text-decoration: underline; /* Soulignement des titres */
+    /* text-align: center; */
+    /*background-color: #98FB98;  Fond jaune très clair */
+    color: maroon; /* Texte noir */
+    padding: 5px;
+    font-weight: bold; /* Ajoute du texte en gras */
+}
+.t2 {
+    font-size: 12pt; /* Taille des titres */
+    text-decoration: underline; /* Soulignement des titres */
+    text-align: center; /* Centrage du texte */
+    background-color: #d3d3d3; /* Fond gris clair autour du texte */
+    color: maroon; /* Texte couleur bordeaux */
+    padding: 5px 10px; /* Espace autour du texte */
+    font-weight: bold; /* Texte en gras */
+    border-radius: 5px; /* Coins arrondis */
+    display: inline-block; /* Limite le fond gris clair à la largeur du texte */
+}
